@@ -1,3 +1,9 @@
+/**
+ * script_loader.js
+ * Copyright (c) 2015 
+ * Licensed under the MIT (http://www.opensource.org/licenses/mit-license.php)
+ */
+
 'use strict';
 
 function ScriptLoader (que) {
