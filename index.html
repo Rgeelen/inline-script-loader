@@ -1,0 +1,43 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>script loader</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Place favicon.ico in the root directory -->
+
+        <script>var ccm_script_que = ccm_script_que || [];</script>
+    </head>
+    <body>
+
+        <!-- Fake block view (view.php)-->
+        <div class="block">
+            <p id="test-01">Hello world! This is HTML5 Boilerplate.</p>
+
+            <script>
+
+                /**
+                 *
+                 * your inline code
+                 *
+                 * Wrapped in function that is passed to the que
+                 */
+                
+
+                function myInlineScript01() {
+                    $('#test-01').animate({
+                        'margin-left' : '300px'
+                    }, 300);
+                }
+                ccm_script_que.push([myInlineScript01, ['jQuery']]);
+            </script>
+        </div>
+
+        <!-- end block view -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" async></script>
+        <script src="js/script_loader.js" async></script>
+    </body>
+</html>
